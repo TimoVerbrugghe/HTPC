@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.reboot2windows" name="Windows" version="0.0.1" provider-name="Timo 
+Verbrugghe">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="default.py"> 
+     <provides>executable</provides> 
+  </extension> 
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Reboot to Windows once then reboot back into the default 
+OS.</summary>
+    <description lang="en">Reboot to Windows once then reboot back into the default OS. 
+Requires manual config of addon files. See README file.</description>
+    <platform>linux</platform>
+    <language>en</language>
+  </extension>
+</addon>

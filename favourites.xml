@@ -1,0 +1,9 @@
+<favourites>
+    <favourite name="YouTube TV" thumb="/storage/.kodi/addons/script.chromeyoutubetv/icon.png">RunScript(&quot;script.chromeyoutubetv&quot;)</favourite>
+    <favourite name="CNN" thumb="/storage/.kodi/addons/script.chromecnn/icon.png">RunScript(&quot;script.chromecnn&quot;)</favourite>
+    <favourite name="SteamOS" thumb="/storage/.kodi/addons/script.reboot2steamos/icon.png">RunScript(&quot;script.reboot2steamos&quot;)</favourite>
+    <favourite name="De Redactie" thumb="/storage/.kodi/userdata/addon_data/net.rieter.xot/textures/net.rieter.xot.channel.be.vrtnew/redactielarge.png">ActivateWindow(10025,&quot;plugin://net.rieter.xot/?action=listfolder&amp;channel=chn_vrtnew&amp;channelcode=redactie&quot;,return)</favourite>
+    <favourite name="Exodus" thumb="/storage/.kodi/addons/plugin.video.exodus/icon.png">ActivateWindow(10025,&quot;plugin://plugin.video.exodus/&quot;,return)</favourite>
+    <favourite name="OneDrive" thumb="/storage/.kodi/addons/plugin.onedrive/icon.png">ActivateWindow(10025,&quot;plugin://plugin.onedrive/?content_type=video&quot;,return)</favourite>
+    <favourite name="LibreELEC Configuration" thumb="/usr/share/kodi/addons/service.libreelec.settings/icon.png">RunScript(&quot;service.libreelec.settings&quot;)</favourite>
+</favourites>

@@ -1,0 +1,21 @@
+<advancedsettings>
+    <network>
+        <buffermode>1</buffermode>
+        <cachemembuffersize>314572800</cachemembuffersize>
+        <readbufferfactor>1.8</readbufferfactor>
+    </network>
+    <video>
+        <!-- TvTunes: Section Start -->
+        <excludefromscan action="append">
+            <regexp>/Themes/</regexp>
+            <regexp>[\\/]Themes[\\/]</regexp>
+            <regexp>theme([0-9]*)\.(mp4|mkv|avi|mov|m2ts|MP4|MKV|AVI|MOV|M2TS)$</regexp>
+        </excludefromscan>
+        <excludetvshowsfromscan action="append">
+            <regexp>/Themes/</regexp>
+            <regexp>[\\/]Themes[\\/]</regexp>
+            <regexp>theme([0-9]*)\.(mp4|mkv|avi|mov|m2ts|MP4|MKV|AVI|MOV|M2TS)$</regexp>
+        </excludetvshowsfromscan>
+        <!-- TvTunes: Section End -->
+    </video>
+</advancedsettings>

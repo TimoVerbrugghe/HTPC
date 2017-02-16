@@ -1,0 +1,65 @@
+<keymap>
+	<home>
+		<keyboard>
+			<key id="61523">activatewindow(subtitlesearch)</key>
+			<key id="61521">subtitledelayminus</key>
+			<key id="61527">subtitledelayplus</key>
+		</keyboard>
+	</home>
+	<videolibrary>
+		<keyboard>
+			<key id="61523">activatewindow(subtitlesearch)</key>
+			<key id="61521">subtitledelayminus</key>
+			<key id="61527">subtitledelayplus</key>
+		</keyboard>
+	</videolibrary>
+	<favourites>
+		<keyboard>
+			<key id="61523">activatewindow(subtitlesearch)</key>
+			<key id="61521">subtitledelayminus</key>
+			<key id="61527">subtitledelayplus</key>
+		</keyboard>
+	</favourites>
+	<subtitlesearch>
+		<keyboard>
+			<key id="61523">activatewindow(subtitlesearch)</key>
+			<key id="61521">subtitledelayminus</key>
+			<key id="61527">subtitledelayplus</key>
+		</keyboard>
+	</subtitlesearch>
+	<movieinformation>
+		<keyboard>
+			<key id="61523">activatewindow(subtitlesearch)</key>
+			<key id="61521">subtitledelayminus</key>
+			<key id="61527">subtitledelayplus</key>
+		</keyboard>
+	</movieinformation>
+	<osdvideosettings>
+		<keyboard>
+			<key id="61523">activatewindow(subtitlesearch)</key>
+			<key id="61521">subtitledelayminus</key>
+			<key id="61527">subtitledelayplus</key>
+		</keyboard>
+	</osdvideosettings>
+	<videoosd>
+		<keyboard>
+			<key id="61523">activatewindow(subtitlesearch)</key>
+			<key id="61521">subtitledelayminus</key>
+			<key id="61527">subtitledelayplus</key>
+		</keyboard>
+	</videoosd>
+	<videomenu>
+		<keyboard>
+			<key id="61523">activatewindow(subtitlesearch)</key>
+			<key id="61521">subtitledelayminus</key>
+			<key id="61527">subtitledelayplus</key>
+		</keyboard>
+	</videomenu>
+	<fullscreenvideo>
+		<keyboard>
+			<key id="61523">activatewindow(subtitlesearch)</key>
+			<key id="61521">subtitledelayminus</key>
+			<key id="61527">subtitledelayplus</key>
+		</keyboard>
+	</fullscreenvideo>
+</keymap>

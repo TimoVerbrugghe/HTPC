@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.chromeyoutubetv" name="YouTube TV" version="0.0.3" provider-name="Timo Verbrugghe">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="default.py"> 
+     <provides>executable</provides> 
+  </extension> 
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Opens the chrome browser, hides the mouse cursor and goes to youtube.com/tv</summary>
+    <description lang="en">Opens the chrome browser, hides the mouse cursor and goes to youtube.com/tv. Requires manual config of addon files. See README file.</description>
+    <platform>linux</platform>
+    <language>en</language>
+  </extension>
+</addon>
