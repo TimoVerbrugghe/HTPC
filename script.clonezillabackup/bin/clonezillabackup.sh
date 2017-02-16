@@ -13,15 +13,18 @@ GRUB_CONFIG_FILE="/media/sda2-ata-ADATA_SP310_2D51/boot/grub/grub.cfg" #location
 GRUB_DEFAULT="LibreELEC"
 GRUB_REBOOT="Clonezilla"
 NFS_SERVER=10.124.161.101
+PUSHBULLET_API=o.xYd9Q85uxflrzlSXukayL0XFiYfSfdqf
+PUSHBULLET_TITLE="HTPC: Monthly Backup Started"
+PUSHBULLET_MSG="Backup of your HTPC to an image on your ArchServer over NFS using Clonezilla has begin. All configuration files are in the clonezilla backup addon files. This backup takes about 30-45 minutes."
 
 # Create NFS mounting directory
-mkdir $SCRIPT_DIR/nfs
+mkdir $SCRIPT_DIR/nfs || true
 
 # Mount NFS Share
 mount -t nfs $NFS_SERVER:/home/fileserver/Media/SystemImage $SCRIPT_DIR/nfs/ -o nolock
 
 # Delete previous backup
-rm -rf $SCRIPT_DIR/nfs/HTPC
+rm -rf $SCRIPT_DIR/nfs/HTPC || true
 
 # Setting different LD_LIBRARY_PATH so grub commands can be used
 export LD_LIBRARY_PATH=$SCRIPT_DIR:$LD_LIBRARY_PATH
@@ -33,8 +36,6 @@ $SCRIPT_DIR/grub-set-default --boot-directory=$GRUB_BOOT_DIR $GRUB_DEFAULT
 $SCRIPT_DIR/grub-reboot --boot-directory=$GRUB_BOOT_DIR $GRUB_REBOOT
 
 # Warning sysadmin that a HTPC backup is about to begin
-$SCRIPT_DIR/pushbullet.sh "HTPC: Monthly Backup Started" "Backup of your HTPC to an image on your
-ArchServer over NFS using Clonezilla has begin. All configuration files are in the clonezilla backup addon files. This
-backup takes about 30-45 minutes"
+curl -u $PUSHBULLET_API: https://api.pushbullet.com/v2/pushes -d type=note -d title="$PUSHBULLET_TITLE" -d body="$PUSHBULLET_MSG"
 
 reboot
