@@ -8,7 +8,7 @@
   </extension> 
   <extension point="xbmc.addon.metadata">
     <summary lang="en">Opens the chrome browser, hides the mouse cursor and goes to youtube.com/tv</summary>
-    <description lang="en">Opens the chrome browser, hides the mouse cursor and goes to youtube.com/tv. Requires manual config of addon files. See README file.</description>
+    <description lang="en">Opens the chrome browser, hides the mouse cursor and goes to youtube.com/tv. Requires an Ubuntu chroot with unclutter, google-chrome installed. See README file for more info.</description>
     <platform>linux</platform>
     <language>en</language>
   </extension>
