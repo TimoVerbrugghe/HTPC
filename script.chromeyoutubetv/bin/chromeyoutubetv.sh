@@ -25,14 +25,10 @@ killall -STOP kodi.bin
 printf "Wait half a second before opening Google Chrome" > $logfile 2>&1
 sleep 0.5
 
-printf "Changing to user HTPC" > $logfile 2>&1
-su htpc
-
-printf "Opening Chrome, directly focusing screen" > $logfile 2>&1
-DISPLAY=:0 wmctrl -r "google-chrome https://www.youtube.com/tv/ --kiosk --noerrdialogs" -b add,fullscreen & google-chrome https://www.youtube.com/tv/ --kiosk --noerrdialogs > $logfile 2>&1
+printf "Opening Chrome" > $logfile 2>&1
+google-chrome https://www.youtube.com/tv/ --no-sandbox --test-type --kiosk --noerrdialogs > $logfile 2>&1
 
 printf "When Chrome is exited, make sure Chrome & Unclutter are really killed" > $logfile 2>&1
-su root
 killall chrome
 killall unclutter
 
