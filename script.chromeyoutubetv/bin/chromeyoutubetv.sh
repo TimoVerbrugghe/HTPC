@@ -14,7 +14,7 @@ printf "Chmodding /dev/shm" > $logfile 2>&1
 chmod 1777 /dev/shm > $logfile 2>&1
 
 printf "Starting Unclutter" > $logfile 2>&1
-unclutter -idle 0.01 -root &
+unclutter -idle 0.01 -root || true &&
 
 printf "Put Kodi window in the background" > $logfile 2>&1
 DISPLAY=:0 wmctrl -r kodi -b add,hidden
@@ -26,7 +26,7 @@ printf "Wait half a second before opening Google Chrome" > $logfile 2>&1
 sleep 0.5
 
 printf "Opening Chrome" > $logfile 2>&1
-google-chrome https://www.youtube.com/tv/ --no-sandbox --test-type --kiosk --noerrdialogs > $logfile 2>&1
+DISPLAY=:0 wmctrl -r "google-chrome https://www.youtube.com/tv/ --no-sandbox --test-type --kiosk --noerrdialogs" -b add,fullscreen && google-chrome https://www.youtube.com/tv/ --no-sandbox --test-type --kiosk --noerrdialogs > $logfile 2>&1
 
 printf "When Chrome is exited, make sure Chrome & Unclutter are really killed" > $logfile 2>&1
 killall chrome
