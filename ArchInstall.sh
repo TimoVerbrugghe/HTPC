@@ -212,3 +212,8 @@ nano ~/.bash_profile
 
 	# Enable systemd samba services
 	systemctl enable smbd.service nmbd.service
+
+## Clonezilla backup timer
+	# Move clonezillabackup.timer & clonezillabackup.service to /etc/systemd/system/
+	systemctl enable clonezillabackup.timer
+	systemctl start clonezillabackup.timer

@@ -1,0 +1,6 @@
+[Unit]
+Description = CloneZilla Backup Script
+
+[Service]
+Type=oneshot
+ExecStart=/root/.kodi/addons/script.clonezillabackup/bin/clonezillabackup.sh
