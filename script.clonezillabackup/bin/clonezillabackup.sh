@@ -8,9 +8,7 @@
 set -e
 
 SCRIPT_DIR=$(dirname `which $0`)
-GRUB_BOOT_DIR="/media/sda2-ata-ADATA_SP310_2D51/boot" #location of the grub boot directory
-GRUB_CONFIG_FILE="/media/sda2-ata-ADATA_SP310_2D51/boot/grub/grub.cfg" #location of the grub config file
-GRUB_DEFAULT="LibreELEC"
+GRUB_DEFAULT=0
 GRUB_REBOOT="Clonezilla"
 NFS_SERVER=10.124.161.101
 PUSHBULLET_API=o.xYd9Q85uxflrzlSXukayL0XFiYfSfdqf
@@ -26,16 +24,13 @@ mount -t nfs $NFS_SERVER:/home/fileserver/Media/SystemImage $SCRIPT_DIR/nfs/ -o 
 # Delete previous backup
 rm -rf $SCRIPT_DIR/nfs/HTPC || true
 
-# Setting different LD_LIBRARY_PATH so grub commands can be used
-export LD_LIBRARY_PATH=$SCRIPT_DIR:$LD_LIBRARY_PATH
-
 # Set default boot entry
-$SCRIPT_DIR/grub-set-default --boot-directory=$GRUB_BOOT_DIR $GRUB_DEFAULT
+/usr/bin/grub-set-default $GRUB_DEFAULT
 
 # Set Clonezilla Boot entry once
-$SCRIPT_DIR/grub-reboot --boot-directory=$GRUB_BOOT_DIR $GRUB_REBOOT
+/usr/bin/grub-reboot $GRUB_REBOOT
 
 # Warning sysadmin that a HTPC backup is about to begin
-curl -u $PUSHBULLET_API: https://api.pushbullet.com/v2/pushes -d type=note -d title="$PUSHBULLET_TITLE" -d body="$PUSHBULLET_MSG"
+/usr/bin/curl -u $PUSHBULLET_API: https://api.pushbullet.com/v2/pushes -d type=note -d title="$PUSHBULLET_TITLE" -d body="$PUSHBULLET_MSG"
 
 reboot
