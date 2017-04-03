@@ -24,7 +24,7 @@ swapon /dev/sda3
 
 ## Install the base packages
 # Install these additional packages
-pacstrap /mnt base base-devel btrfs-progs openssh wget curl ufw smartmontools sudo ntfs-3g intel-ucode ttf-dejavu libcdio libdvdread libdvdcss libdvdnav grub efibootmgr alsa-utils xorg-server xorg-xinit xf86-video-intel mesa-libgl libva-intel-driver screenfetch openbox chromium kodi bluez python2-pybluez libnfs libplist libcec lirc lsb-release pulseaudio shairplay unrar unzip unclutter gptfdisk dosfstools parted hfsprogs xfsprogs nfs-utils ufw samba avahi nss-mdns
+pacstrap /mnt base base-devel btrfs-progs openssh wget curl ufw smartmontools sudo ntfs-3g intel-ucode ttf-dejavu libcdio libdvdread libdvdcss libdvdnav grub efibootmgr alsa-utils xorg-server xorg-xinit xf86-video-intel mesa-libgl libva-intel-driver screenfetch openbox chromium kodi bluez python2-pybluez libnfs libplist libcec lirc lsb-release pulseaudio shairplay unrar unzip unclutter gptfdisk dosfstools parted hfsprogs xfsprogs nfs-utils ufw samba avahi nss-mdns pkgfile udisks2 udevil
 
 ## Fstab
 # After generating fstab, be sure to change to current fstab with right mounting options.
@@ -52,9 +52,9 @@ TimeoutCarrier=300
 
 # /etc/netctl/hooks/status
 
-#!/bin/sh
-ExecUpPost="systemctl start network-online.target"
-ExecDownPre="systemctl stop network-online.target"
+	#!/bin/sh
+	ExecUpPost="systemctl start network-online.target"
+	ExecDownPre="systemctl stop network-online.target"
 
 netctl enable staticIPwired
 
@@ -85,18 +85,7 @@ nano /etc/ssh/sshd_config
 	# https://wiki.archlinux.org/index.php/Reflector
 
 	# Create pacman hook
-
-[Trigger]
-Operation = Upgrade
-Type = Package
-Target = pacman-mirrorlist
-
-[Action]
-Description = Updating pacman-mirrorlist with reflector and removing pacnew...
-When = PostTransaction
-Depends = reflector
-Exec = /usr/bin/env sh -c "reflector --protocol https --latest 20 --sort rate --save /etc/pacman.d/mirrorlist; if [[ -f /etc/pacman.d/mirrorlist.pacnew ]]; then rm /etc/pacman.d/mirrorlist.pacnew; fi"
-
+		# Move mirrorupgrade.hook to /etc/pacman.d/hooks/
 
 	# Create systemd service & weekly systemd timer
 		# Move reflector.service & reflector.timer to /etc/systemd/system/
@@ -127,8 +116,7 @@ Exec = /usr/bin/env sh -c "reflector --protocol https --latest 20 --sort rate --
 
 ## Console Improvements
 	# Bash Additions - Bash Tips & Tricks
-		# Command not found (first install pkgfile!)
-		pacman -Syu pkgfile
+		# Command not found
 		pkgfile --update
 		
 		# Search for commands in non-installed packages if command not found
@@ -149,9 +137,9 @@ Exec = /usr/bin/env sh -c "reflector --protocol https --latest 20 --sort rate --
 ## Autologin
 systemctl edit getty@tty1
 
-[Service]
-ExecStart=
-ExecStart=-/usr/bin/agetty --autologin fileserver --noclear %I $TERM
+	[Service]
+	ExecStart=
+	ExecStart=-/usr/bin/agetty --autologin root --noclear %I $TERM
 
 ## Kodi start & volume max at boot
 cp /etc/X11/xinit/xinitrc ~/.xinitrc
@@ -167,18 +155,11 @@ nano ~/.bash_profile
 	[[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx &> /dev/null
 
 ## Devmon
-	pacman -Syu udisks2 udevil
 	systemctl enable devmon@root.service
 	nano /etc/udevil/udevil.conf
 		# add hfsplus to allowed filesystems
 
-	nano /etc/udev/rules.d/99-udisks2.rules
-
-		# UDISKS_FILESYSTEM_SHARED
-		# ==1: mount filesystem to a shared directory (/media/VolumeName)
-		# ==0: mount filesystem to a private directory (/run/media/$USER/VolumeName)
-		# See udisks(8)
-		ENV{ID_FS_USAGE}=="filesystem|other|crypto", ENV{UDISKS_FILESYSTEM_SHARED}="1"
+	# Move 99-udisks2.rules to /etc/udev/rules.d
 
 	mkdir /media
 
@@ -216,28 +197,14 @@ nano ~/.bash_profile
 			hosts: files mdns_minimal [NOTFOUND=return] dns myhostname
 
 		# Advertise smb server on Avahi network
-		nano /etc/avahi/services/smb.service
-
-		<?xml version="1.0" standalone='no'?>
-		<!DOCTYPE service-group SYSTEM "avahi-service.dtd">
-		<service-group>
-		  <name replace-wildcards="yes">%h</name>
-		  <service>
-		    <type>_smb._tcp</type>
-		    <port>445</port>
-		  </service>
-		  <service>
-		   <type>_device-info._tcp</type>
-		   <port>0</port>
-		   <txt-record>model=RackMac</txt-record>
-		 </service>
-		</service-group>
+		# Move smb.service to /etc/avahi/services/
 
 		# Enable & start service
 		systemctl enable avahi-daemon.service
 		systemctl start avahi-daemon.service
 
-	# Move correct smb.conf (config/smb.conf) to etc/samba/smb.conf
+	# Move correct smb.conf (config/smb.conf) to /etc/samba/smb.conf
+	mkdir /root/Public
 
 	# create samba password
 	smbpasswd -a root
