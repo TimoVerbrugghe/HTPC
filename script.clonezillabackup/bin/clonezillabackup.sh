@@ -19,18 +19,18 @@ PUSHBULLET_MSG="Backup of your HTPC to an image on your ArchServer over NFS usin
 mkdir $SCRIPT_DIR/nfs || true
 
 # Mount NFS Share
-mount -t nfs $NFS_SERVER:/home/fileserver/Media/SystemImage $SCRIPT_DIR/nfs/ -o nolock
+sudo mount -t nfs $NFS_SERVER:/home/fileserver/Media/SystemImage $SCRIPT_DIR/nfs/ -o nolock
 
 # Delete previous backup
-rm -rf $SCRIPT_DIR/nfs/HTPC || true
+sudo rm -rf $SCRIPT_DIR/nfs/HTPC || true
 
 # Set default boot entry
-/usr/bin/grub-set-default $GRUB_DEFAULT
+sudo grub-set-default $GRUB_DEFAULT
 
 # Set Clonezilla Boot entry once
-/usr/bin/grub-reboot $GRUB_REBOOT
+sudo grub-reboot $GRUB_REBOOT
 
 # Warning sysadmin that a HTPC backup is about to begin
-/usr/bin/curl -u $PUSHBULLET_API: https://api.pushbullet.com/v2/pushes -d type=note -d title="$PUSHBULLET_TITLE" -d body="$PUSHBULLET_MSG"
+curl -u $PUSHBULLET_API: https://api.pushbullet.com/v2/pushes -d type=note -d title="$PUSHBULLET_TITLE" -d body="$PUSHBULLET_MSG"
 
 reboot

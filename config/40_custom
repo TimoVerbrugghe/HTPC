@@ -7,7 +7,7 @@ exec tail -n +3 $0
 menuentry "Clonezilla" {
 	insmod btrfs
 	search --no-floppy --fs-uuid --set <UUID>
-	set isofile="/root/clonezilla.iso"
+	set isofile="/home/htpc/clonezilla.iso"
 	loopback loop $isofile
 	linux (loop)/live/vmlinuz boot=live union=overlay username=user config components quiet noswap nolocales edd=on nomodeset nodmraid noeject ocs_prerun="dhclient -v enp8s0" ocs_prerun1="sleep 2" ocs_prerun2="mount -t nfs4 10.124.161.101:/home/fileserver/Media /mnt -o noatime,nodiratime" ocs_prerun3="mount --bind /mnt/SystemImage /home/partimag/" ocs_live_run="/usr/sbin/ocs-sr --batch -q2 -j2 -z1p -i 4096 -p reboot savedisk HTPC sda" ocs_live_extra_param="" keyboard-layouts=be2-latin1 timezone=Europe/Brussels ocs_live_batch="yes" locales=en_US.UTF-8 vga=788 ip=frommedia nosplash toram=filesystem.squashfs findiso=$isofile
 	initrd (loop)/live/initrd.img

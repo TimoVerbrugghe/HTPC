@@ -1,0 +1,221 @@
+<keymap>
+	<global>
+			<key id="61523">activatewindow(subtitlesearch)</key>
+			<key id="61521">subtitledelayminus</key>
+			<key id="61527">subtitledelayplus</key>
+			<key id="61512">activatewindow(Home)</key>
+	</global>
+
+<!-- Standard Screens -->
+	<home>
+		<keyboard>
+			<key id="61523">activatewindow(subtitlesearch)</key>
+			<key id="61521">subtitledelayminus</key>
+			<key id="61527">subtitledelayplus</key>
+			<key id="61512">activatewindow(Home)</key>
+		</keyboard>
+	</home>
+
+	<videos>
+		<keyboard>
+			<key id="61523">activatewindow(subtitlesearch)</key>
+			<key id="61521">subtitledelayminus</key>
+			<key id="61527">subtitledelayplus</key>
+			<key id="61512">activatewindow(Home)</key>
+		</keyboard>
+	</videos>
+
+	<music>
+		<keyboard>
+			<key id="61523">activatewindow(subtitlesearch)</key>
+			<key id="61521">subtitledelayminus</key>
+			<key id="61527">subtitledelayplus</key>
+			<key id="61512">activatewindow(Home)</key>
+		</keyboard>
+	</music>
+
+	<movieinformation>
+		<keyboard>
+			<key id="61523">activatewindow(subtitlesearch)</key>
+			<key id="61521">subtitledelayminus</key>
+			<key id="61527">subtitledelayplus</key>
+			<key id="61512">activatewindow(Home)</key>
+		</keyboard>
+	</movieinformation>
+
+	<fullscreenvideo>
+		<keyboard>
+			<key id="61523">activatewindow(subtitlesearch)</key>
+			<key id="61521">subtitledelayminus</key>
+			<key id="61527">subtitledelayplus</key>
+			<key id="61512">activatewindow(Home)</key>
+		</keyboard>
+	</fullscreenvideo>
+
+	<videoosd>
+		<keyboard>
+			<key id="61523">activatewindow(subtitlesearch)</key>
+			<key id="61521">subtitledelayminus</key>
+			<key id="61527">subtitledelayplus</key>
+			<key id="61512">activatewindow(Home)</key>
+		</keyboard>
+	</videoosd>
+
+	<videomenu>
+		<keyboard>
+			<key id="61523">activatewindow(subtitlesearch)</key>
+			<key id="61521">subtitledelayminus</key>
+			<key id="61527">subtitledelayplus</key>
+			<key id="61512">activatewindow(Home)</key>
+		</keyboard>
+	</videomenu>
+
+	<filemanager>
+		<keyboard>
+			<key id="61523">activatewindow(subtitlesearch)</key>
+			<key id="61521">subtitledelayminus</key>
+			<key id="61527">subtitledelayplus</key>
+			<key id="61512">activatewindow(Home)</key>
+		</keyboard>
+	</filemanager>
+
+<!-- Popups -->
+	<virtualkeyboard>
+		<keyboard>
+			<key id="61523">activatewindow(subtitlesearch)</key>
+			<key id="61521">subtitledelayminus</key>
+			<key id="61527">subtitledelayplus</key>
+			<key id="61512">dialog.close(all)</key>
+		</keyboard>
+	</virtualkeyboard>
+
+	<subtitlesearch>
+		<keyboard>
+			<key id="61523">activatewindow(subtitlesearch)</key>
+			<key id="61521">subtitledelayminus</key>
+			<key id="61527">subtitledelayplus</key>
+			<key id="61512">dialog.close(all)</key>
+		</keyboard>
+	</subtitlesearch>
+
+	<shutdownmenu>
+		<keyboard>
+			<key id="61523">activatewindow(subtitlesearch)</key>
+			<key id="61521">subtitledelayminus</key>
+			<key id="61527">subtitledelayplus</key>
+			<key id="61512">dialog.close(all)</key>
+		</keyboard>
+	</shutdownmenu>
+
+	<!-- Favourites is viewed as a popup, not a seperate window -->
+	<favourites>
+		<keyboard>
+			<key id="61523">activatewindow(subtitlesearch)</key>
+			<key id="61521">subtitledelayminus</key>
+			<key id="61527">subtitledelayplus</key>
+			<key id="61512">dialog.close(all)</key>
+		</keyboard>
+	</favourites>
+
+<!-- Setings windows -->
+	<settings>
+		<keyboard>
+			<key id="61523">activatewindow(subtitlesearch)</key>
+			<key id="61521">subtitledelayminus</key>
+			<key id="61527">subtitledelayplus</key>
+			<key id="61512">activatewindow(Home)</key>
+		</keyboard>
+	</settings>
+
+	<osdvideosettings>
+		<keyboard>
+			<key id="61523">activatewindow(subtitlesearch)</key>
+			<key id="61521">subtitledelayminus</key>
+			<key id="61527">subtitledelayplus</key>
+			<key id="61512">activatewindow(Home)</key>
+		</keyboard>
+	</osdvideosettings>
+
+	<systemsettings>
+		<keyboard>
+			<key id="61523">activatewindow(subtitlesearch)</key>
+			<key id="61521">subtitledelayminus</key>
+			<key id="61527">subtitledelayplus</key>
+			<key id="61512">activatewindow(Home)</key>
+		</keyboard>
+	</systemsettings>
+
+	<servicesettings>
+		<keyboard>
+			<key id="61523">activatewindow(subtitlesearch)</key>
+			<key id="61521">subtitledelayminus</key>
+			<key id="61527">subtitledelayplus</key>
+			<key id="61512">activatewindow(Home)</key>
+		</keyboard>
+	</servicesettings>	
+
+	<pvrsettings>
+		<keyboard>
+			<key id="61523">activatewindow(subtitlesearch)</key>
+			<key id="61521">subtitledelayminus</key>
+			<key id="61527">subtitledelayplus</key>
+			<key id="61512">activatewindow(Home)</key>
+		</keyboard>
+	</pvrsettings>
+
+	<playersettings>
+		<keyboard>
+			<key id="61523">activatewindow(subtitlesearch)</key>
+			<key id="61521">subtitledelayminus</key>
+			<key id="61527">subtitledelayplus</key>
+			<key id="61512">activatewindow(Home)</key>
+		</keyboard>
+	</playersettings>
+
+	<mediasettings>
+		<keyboard>
+			<key id="61523">activatewindow(subtitlesearch)</key>
+			<key id="61521">subtitledelayminus</key>
+			<key id="61527">subtitledelayplus</key>
+			<key id="61512">activatewindow(Home)</key>
+		</keyboard>
+	</mediasettings>
+
+	<interfacesettings>
+		<keyboard>
+			<key id="61523">activatewindow(subtitlesearch)</key>
+			<key id="61521">subtitledelayminus</key>
+			<key id="61527">subtitledelayplus</key>
+			<key id="61512">activatewindow(Home)</key>
+		</keyboard>
+	</interfacesettings>
+
+<!-- Addon screens -->
+	<addonbrowser>
+		<keyboard>
+			<key id="61523">activatewindow(subtitlesearch)</key>
+			<key id="61521">subtitledelayminus</key>
+			<key id="61527">subtitledelayplus</key>
+			<key id="61512">activatewindow(Home)</key>
+		</keyboard>
+	</addonbrowser>
+
+	<addonsettings>
+		<keyboard>
+			<key id="61523">activatewindow(subtitlesearch)</key>
+			<key id="61521">subtitledelayminus</key>
+			<key id="61527">subtitledelayplus</key>
+			<key id="61512">activatewindow(Home)</key>
+		</keyboard>
+	</addonsettings>
+
+	<addoninformation>
+		<keyboard>
+			<key id="61523">activatewindow(subtitlesearch)</key>
+			<key id="61521">subtitledelayminus</key>
+			<key id="61527">subtitledelayplus</key>
+			<key id="61512">activatewindow(Home)</key>
+		</keyboard>
+	</addoninformation>
+
+</keymap>

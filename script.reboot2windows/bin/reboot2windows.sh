@@ -12,7 +12,7 @@ GRUB_REBOOT="Windows"
 
 #####
 
-/usr/bin/grub-set-default $GRUB_DEFAULT
-/usr/bin/grub-reboot $GRUB_REBOOT
+sudo grub-set-default $GRUB_DEFAULT
+sudo grub-reboot $GRUB_REBOOT
 
 reboot
