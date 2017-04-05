@@ -136,6 +136,9 @@ nano ~/.bash_profile
 	ufw allow from 10.124.161.0/24 to any port 138 proto udp
 	ufw allow from 10.124.161.0/24 to any port 139 proto tcp
 	ufw allow from 10.124.161.0/24 to any port 445 proto tcp
+	# Allowing yatse remote control
+	ufw allow from 10.124.161.0/24 to any port 8080 proto tcp
+	ufw allow from 10.124.161.0/24 to any port 9777 proto udp
 	ufw enable
 
 ## Samba Server
@@ -176,6 +179,18 @@ nano ~/.bash_profile
 
 	grub-mkconfig -o /boot/grub/grub.cfg
 
-## Steam Install
+## Disable ALT-F4 for kodi
+	# Create local configuration files for openbox
+	cp -R /etc/xdg/openbox/ ~/.config/
 
-## Plymouth Install
+	nano ~/.config/openbox/rc.xml
+		# Under <!-- Keybindings for windows -->, change ALT-F4 options
+		<keybind key="A-F4">
+		 <action name="If">
+		  <title>Kodi</title>
+		  <then><!-- Do nothing for Kodi --></then>
+		  <else>
+		   <action name="Close" />
+		  </else>
+		 </action>
+		</keybind>

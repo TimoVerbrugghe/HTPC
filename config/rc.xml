@@ -1,9 +1,0 @@
-<keybind key="A-F4">
- <action name="If">
-  <title>Kodi</title>
-  <then><!-- Do nothing for Kodi --></then>
-  <else>
-   <action name="Close" />
-  </else>
- </action>
-</keybind>
