@@ -24,7 +24,7 @@ swapon /dev/sda3
 
 ## Install the base packages
 # Install these additional packages
-pacstrap /mnt base base-devel btrfs-progs openssh wget curl ufw smartmontools sudo ntfs-3g intel-ucode ttf-dejavu libcdio libdvdread libdvdcss libdvdnav grub efibootmgr alsa-utils xorg-server xorg-xinit xf86-video-intel mesa-libgl libva-intel-driver screenfetch openbox chromium kodi bluez bluez-utils python2-pybluez libnfs libplist libcec lirc lsb-release pulseaudio shairplay unrar unzip unclutter gptfdisk dosfstools parted hfsprogs xfsprogs nfs-utils ufw samba avahi nss-mdns pkgfile udisks2 udevil reflector mlocate
+pacstrap /mnt base base-devel btrfs-progs openssh wget curl ufw smartmontools sudo ntfs-3g intel-ucode ttf-dejavu libcdio libdvdread libdvdcss libdvdnav grub efibootmgr alsa-utils xorg-server xorg-xinit xf86-video-intel mesa-libgl libva-intel-driver openbox chromium kodi bluez bluez-utils python2-pybluez libnfs libplist libcec lirc lsb-release pulseaudio shairplay unrar unzip unclutter gptfdisk dosfstools parted hfsprogs xfsprogs nfs-utils ufw samba avahi nss-mdns pkgfile udisks2 udevil reflector mlocate
 
 ## Fstab
 # After generating fstab, be sure to change to current fstab with right mounting options.

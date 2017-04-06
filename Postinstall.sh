@@ -84,11 +84,7 @@ nano /etc/ssh/sshd_config
 		RESET="\[$(tput sgr0)\]"
 
 		export PS1="${GREEN}\\u@\h \\W${RESET}> "
-
-	# Add screenfetch prompt
-		nano ~/.bashrc
-		if [ -f /usr/bin/screenfetch ]; then screenfetch; fi
-
+		
 ## Autologin
 systemctl edit getty@tty1
 
