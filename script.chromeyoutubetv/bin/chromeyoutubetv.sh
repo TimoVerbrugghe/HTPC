@@ -20,7 +20,7 @@ printf "Opening Chrome" > $logfile 2>&1
 DISPLAY=:0 /usr/bin/chromium https://www.youtube.com/tv/ --kiosk --noerrdialogs > $logfile 2>&1
 
 printf "When Chromium is exited, make sure Chromium is really killed" > $logfile 2>&1
-killall chromium
+killall chromium || true > $logfile 2>&1
 
 printf "Wait half a second before refocusing Kodi" > $logfile 2>&1
 sleep 0.5

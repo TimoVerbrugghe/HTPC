@@ -98,7 +98,6 @@ nano ~/.xinitrc
 	exec openbox-session &
 	exec amixer sset Master unmute &
 	exec amixer sset Master 100% &
-	exec devmon &
 	exec unclutter -idle 0.01 -root &
 	exec /usr/bin/kodi-standalone -- :0 -nolisten tcp vt1
 
@@ -113,6 +112,9 @@ nano ~/.bash_profile
 	# Move 99-udisks2.rules to /etc/udev/rules.d
 
 	mkdir /media
+
+	# Enable devmon at startup with root permissions (needed for mounting)
+	systemctl enable devmon@root.service
 
 ## Silent boot
 	nano /etc/default/grub
