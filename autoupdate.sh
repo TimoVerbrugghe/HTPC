@@ -9,7 +9,6 @@
 
 PUSHBULLET_SCRIPT="/home/htpc/pushbullet.sh"
 UPDATE_LOG="/home/htpc/autoupdate/autoupdate.log"
-PUSHBULLET_API=
 
 #####################
 # Autoupdate Script #
