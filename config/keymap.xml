@@ -4,6 +4,8 @@
 			<key id="61521">subtitledelayminus</key>
 			<key id="61527">subtitledelayplus</key>
 			<key id="61512">activatewindow(Home)</key>
+      		<volumeplus>RunScript(/home/htpc/volumeup.py)</volumeplus>
+      		<volumeminus>RunScript(/home/htpc/volumedown.py)</volumeminus>
 	</global>
 
 <!-- Standard Screens -->
