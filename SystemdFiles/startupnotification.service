@@ -1,0 +1,10 @@
+[Unit]
+Description = Startup notification HTPC
+After=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/home/htpc/pushbullet.sh "HTPC: Boot Sequence finished" "HTPC has successfully booted and is now fully operational."
+
+[Install]
+WantedBy=multi-user.target
