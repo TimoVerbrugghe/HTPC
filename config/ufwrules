@@ -1,0 +1,16 @@
+Status: active
+
+To                         Action      From
+--                         ------      ----
+# SSH
+22/tcp                     ALLOW       192.168.0.0/24
+
+# SMB
+137/udp                    ALLOW       192.168.0.0/24
+138/udp                    ALLOW       192.168.0.0/24
+139/tcp                    ALLOW       192.168.0.0/24
+445/tcp                    ALLOW       192.168.0.0/24
+
+# Kodi Event & Web Server
+80/tcp                     ALLOW       192.168.0.0/24
+9777/udp                   ALLOW       192.168.0.0/24

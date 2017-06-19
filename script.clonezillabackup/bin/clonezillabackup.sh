@@ -10,7 +10,7 @@ set -e
 SCRIPT_DIR=$(dirname `which $0`)
 GRUB_DEFAULT=0
 GRUB_REBOOT="Clonezilla"
-NFS_SERVER=10.124.161.101
+NFS_SERVER=192.168.0.3
 PUSHBULLET_API=o.xYd9Q85uxflrzlSXukayL0XFiYfSfdqf
 PUSHBULLET_TITLE="HTPC: Monthly Backup Started"
 PUSHBULLET_MSG="Backup of your HTPC to an image on your ArchServer over NFS using Clonezilla has begin. All configuration files are in the clonezilla backup addon files. This backup takes about 30-45 minutes."

@@ -73,7 +73,7 @@ nano /etc/ssh/sshd_config
 		
 		# Search for commands in non-installed packages if command not found
 		nano ~/.bashrc
-		source /usr/share/doc/pkgfile/command-not-found.bash
+			source /usr/share/doc/pkgfile/command-not-found.bash
 
 	# Console prompt - Console Bach prompt
 		# Terminfo escape sequences
@@ -127,17 +127,7 @@ nano ~/.bash_profile
 	grub-mkconfig -o /boot/grub/grub.cfg	
 
 ## Firewall
-	ufw default deny
-	ufw allow from 10.124.161.0/24 to any port 22 proto tcp # to keep ssh running if you are doing this install over ssh
-	# Allowing samba
-	ufw allow from 10.124.161.0/24 to any port 137 proto udp
-	ufw allow from 10.124.161.0/24 to any port 138 proto udp
-	ufw allow from 10.124.161.0/24 to any port 139 proto tcp
-	ufw allow from 10.124.161.0/24 to any port 445 proto tcp
-	# Allowing yatse remote control
-	ufw allow from 10.124.161.0/24 to any port 8080 proto tcp
-	ufw allow from 10.124.161.0/24 to any port 9777 proto udp
-	ufw enable
+	# Set up UFW according to ufwrules in config folder
 
 ## Samba Server
 	## Avahi
