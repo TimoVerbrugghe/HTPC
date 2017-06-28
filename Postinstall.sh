@@ -92,6 +92,13 @@ systemctl edit getty@tty1
 	ExecStart=
 	ExecStart=-/usr/bin/agetty --autologin root --noclear %I $TERM
 
+## NFS Share mounting
+# Create folders for Movies & TVShows
+mkdir /home/htpc/Movies
+mkdir /home/htpc/TVShows
+
+# Change /etc/fstab file as presented in the config/fstab file to do a system nfs mount on boot of ArchServer NFS Shares (faster & more reliable than libnfs in Kodi GUI)
+
 ## Kodi start & volume max at boot
 cp /etc/X11/xinit/xinitrc ~/.xinitrc
 nano ~/.xinitrc

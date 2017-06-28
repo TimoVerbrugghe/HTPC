@@ -1,0 +1,10 @@
+#
+# /etc/fstab: static file system information
+#
+# <file system> <dir>   <type>  <options>       <dump>  <pass>
+
+# Movies - ArchServer NFS Share
+192.168.0.3:/home/fileserver/Media/Movies       /home/htpc/Movies       nfs     defaults      0 0
+
+# TVShows - ArchServer NFS Share
+192.168.0.3:/home/fileserver/Media/TVShows      /home/htpc/TVShows      nfs     defaults      0 0
