@@ -7,8 +7,8 @@
 # Variables #
 #############
 
-PUSHBULLET_SCRIPT="/home/htpc/pushbullet.sh"
-UPDATE_LOG="/home/htpc/autoupdate/autoupdate.log"
+PUSHBULLET_SCRIPT="/home/htpc/HTPCGit/scripts/pushbullet.sh"
+UPDATE_LOG="/home/htpc/logs/autoupdate.log"
 
 #####################
 # Autoupdate Script #

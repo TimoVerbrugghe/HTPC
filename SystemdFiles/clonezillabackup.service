@@ -1,5 +1,6 @@
 [Unit]
 Description = CloneZilla Backup Script
+OnFailure=unit-failure-notification@%n
 
 [Service]
 Type=oneshot
