@@ -5,8 +5,8 @@
 			<key id="61527">subtitledelayplus</key>
 			<key id="61512">activatewindow(Home)</key>
 
-			<key id="61501">RunScript(/home/htpc/volumeup.py)</key>
-			<key id="61485">RunScript(/home/htpc/volumedown.py)</key>
+			<key id="61501">RunScript(/home/htpc/HTPCGit/scripts/volumeup.py)</key>
+			<key id="61485">RunScript(/home/htpc/HTPCGit/scripts/volumedown.py)</key>
 			
 	</global>
 
@@ -18,8 +18,8 @@
 			<key id="61527">subtitledelayplus</key>
 			<key id="61512">activatewindow(Home)</key>
 
-			<key id="61501">RunScript(/home/htpc/volumeup.py)</key>
-			<key id="61485">RunScript(/home/htpc/volumedown.py)</key>
+			<key id="61501">RunScript(/home/htpc/HTPCGit/scripts/volumeup.py)</key>
+			<key id="61485">RunScript(/home/htpc/HTPCGit/scripts/volumedown.py)</key>
 		</keyboard>
 	</home>
 
@@ -30,8 +30,8 @@
 			<key id="61527">subtitledelayplus</key>
 			<key id="61512">activatewindow(Home)</key>
 
-			<key id="61501">RunScript(/home/htpc/volumeup.py)</key>
-			<key id="61485">RunScript(/home/htpc/volumedown.py)</key>
+			<key id="61501">RunScript(/home/htpc/HTPCGit/scripts/volumeup.py)</key>
+			<key id="61485">RunScript(/home/htpc/HTPCGit/scripts/volumedown.py)</key>
 		</keyboard>
 	</videos>
 
@@ -42,8 +42,8 @@
 			<key id="61527">subtitledelayplus</key>
 			<key id="61512">activatewindow(Home)</key>
 
-			<key id="61501">RunScript(/home/htpc/volumeup.py)</key>
-			<key id="61485">RunScript(/home/htpc/volumedown.py)</key>
+			<key id="61501">RunScript(/home/htpc/HTPCGit/scripts/volumeup.py)</key>
+			<key id="61485">RunScript(/home/htpc/HTPCGit/scripts/volumedown.py)</key>
 		</keyboard>
 	</music>
 
@@ -54,8 +54,8 @@
 			<key id="61527">subtitledelayplus</key>
 			<key id="61512">activatewindow(Home)</key>
 
-			<key id="61501">RunScript(/home/htpc/volumeup.py)</key>
-			<key id="61485">RunScript(/home/htpc/volumedown.py)</key>
+			<key id="61501">RunScript(/home/htpc/HTPCGit/scripts/volumeup.py)</key>
+			<key id="61485">RunScript(/home/htpc/HTPCGit/scripts/volumedown.py)</key>
 		</keyboard>
 	</movieinformation>
 
@@ -66,8 +66,8 @@
 			<key id="61527">subtitledelayplus</key>
 			<key id="61512">activatewindow(Home)</key>
 
-			<key id="61501">RunScript(/home/htpc/volumeup.py)</key>
-			<key id="61485">RunScript(/home/htpc/volumedown.py)</key>
+			<key id="61501">RunScript(/home/htpc/HTPCGit/scripts/volumeup.py)</key>
+			<key id="61485">RunScript(/home/htpc/HTPCGit/scripts/volumedown.py)</key>
 		</keyboard>
 	</fullscreenvideo>
 
@@ -78,8 +78,8 @@
 			<key id="61527">subtitledelayplus</key>
 			<key id="61512">activatewindow(Home)</key>
 
-			<key id="61501">RunScript(/home/htpc/volumeup.py)</key>
-			<key id="61485">RunScript(/home/htpc/volumedown.py)</key>
+			<key id="61501">RunScript(/home/htpc/HTPCGit/scripts/volumeup.py)</key>
+			<key id="61485">RunScript(/home/htpc/HTPCGit/scripts/volumedown.py)</key>
 		</keyboard>
 	</videoosd>
 
@@ -90,8 +90,8 @@
 			<key id="61527">subtitledelayplus</key>
 			<key id="61512">activatewindow(Home)</key>
 
-			<key id="61501">RunScript(/home/htpc/volumeup.py)</key>
-			<key id="61485">RunScript(/home/htpc/volumedown.py)</key>
+			<key id="61501">RunScript(/home/htpc/HTPCGit/scripts/volumeup.py)</key>
+			<key id="61485">RunScript(/home/htpc/HTPCGit/scripts/volumedown.py)</key>
 		</keyboard>
 	</videomenu>
 
@@ -102,8 +102,8 @@
 			<key id="61527">subtitledelayplus</key>
 			<key id="61512">activatewindow(Home)</key>
 
-			<key id="61501">RunScript(/home/htpc/volumeup.py)</key>
-			<key id="61485">RunScript(/home/htpc/volumedown.py)</key>
+			<key id="61501">RunScript(/home/htpc/HTPCGit/scripts/volumeup.py)</key>
+			<key id="61485">RunScript(/home/htpc/HTPCGit/scripts/volumedown.py)</key>
 		</keyboard>
 	</filemanager>
 
@@ -115,8 +115,8 @@
 			<key id="61527">subtitledelayplus</key>
 			<key id="61512">dialog.close(all)</key>
 
-			<key id="61501">RunScript(/home/htpc/volumeup.py)</key>
-			<key id="61485">RunScript(/home/htpc/volumedown.py)</key>
+			<key id="61501">RunScript(/home/htpc/HTPCGit/scripts/volumeup.py)</key>
+			<key id="61485">RunScript(/home/htpc/HTPCGit/scripts/volumedown.py)</key>
 		</keyboard>
 	</virtualkeyboard>
 
@@ -127,8 +127,8 @@
 			<key id="61527">subtitledelayplus</key>
 			<key id="61512">dialog.close(all)</key>
 
-			<key id="61501">RunScript(/home/htpc/volumeup.py)</key>
-			<key id="61485">RunScript(/home/htpc/volumedown.py)</key>
+			<key id="61501">RunScript(/home/htpc/HTPCGit/scripts/volumeup.py)</key>
+			<key id="61485">RunScript(/home/htpc/HTPCGit/scripts/volumedown.py)</key>
 		</keyboard>
 	</subtitlesearch>
 
@@ -139,8 +139,8 @@
 			<key id="61527">subtitledelayplus</key>
 			<key id="61512">dialog.close(all)</key>
 
-			<key id="61501">RunScript(/home/htpc/volumeup.py)</key>
-			<key id="61485">RunScript(/home/htpc/volumedown.py)</key>
+			<key id="61501">RunScript(/home/htpc/HTPCGit/scripts/volumeup.py)</key>
+			<key id="61485">RunScript(/home/htpc/HTPCGit/scripts/volumedown.py)</key>
 		</keyboard>
 	</shutdownmenu>
 
@@ -152,8 +152,8 @@
 			<key id="61527">subtitledelayplus</key>
 			<key id="61512">dialog.close(all)</key>
 
-			<key id="61501">RunScript(/home/htpc/volumeup.py)</key>
-			<key id="61485">RunScript(/home/htpc/volumedown.py)</key>
+			<key id="61501">RunScript(/home/htpc/HTPCGit/scripts/volumeup.py)</key>
+			<key id="61485">RunScript(/home/htpc/HTPCGit/scripts/volumedown.py)</key>
 		</keyboard>
 	</favourites>
 
@@ -165,8 +165,8 @@
 			<key id="61527">subtitledelayplus</key>
 			<key id="61512">activatewindow(Home)</key>
 
-			<key id="61501">RunScript(/home/htpc/volumeup.py)</key>
-			<key id="61485">RunScript(/home/htpc/volumedown.py)</key>
+			<key id="61501">RunScript(/home/htpc/HTPCGit/scripts/volumeup.py)</key>
+			<key id="61485">RunScript(/home/htpc/HTPCGit/scripts/volumedown.py)</key>
 		</keyboard>
 	</settings>
 
@@ -177,8 +177,8 @@
 			<key id="61527">subtitledelayplus</key>
 			<key id="61512">activatewindow(Home)</key>
 
-			<key id="61501">RunScript(/home/htpc/volumeup.py)</key>
-			<key id="61485">RunScript(/home/htpc/volumedown.py)</key>
+			<key id="61501">RunScript(/home/htpc/HTPCGit/scripts/volumeup.py)</key>
+			<key id="61485">RunScript(/home/htpc/HTPCGit/scripts/volumedown.py)</key>
 		</keyboard>
 	</osdvideosettings>
 
@@ -189,8 +189,8 @@
 			<key id="61527">subtitledelayplus</key>
 			<key id="61512">activatewindow(Home)</key>
 
-			<key id="61501">RunScript(/home/htpc/volumeup.py)</key>
-			<key id="61485">RunScript(/home/htpc/volumedown.py)</key>
+			<key id="61501">RunScript(/home/htpc/HTPCGit/scripts/volumeup.py)</key>
+			<key id="61485">RunScript(/home/htpc/HTPCGit/scripts/volumedown.py)</key>
 		</keyboard>
 	</systemsettings>
 
@@ -201,8 +201,8 @@
 			<key id="61527">subtitledelayplus</key>
 			<key id="61512">activatewindow(Home)</key>
 
-			<key id="61501">RunScript(/home/htpc/volumeup.py)</key>
-			<key id="61485">RunScript(/home/htpc/volumedown.py)</key>
+			<key id="61501">RunScript(/home/htpc/HTPCGit/scripts/volumeup.py)</key>
+			<key id="61485">RunScript(/home/htpc/HTPCGit/scripts/volumedown.py)</key>
 		</keyboard>
 	</servicesettings>	
 
@@ -213,8 +213,8 @@
 			<key id="61527">subtitledelayplus</key>
 			<key id="61512">activatewindow(Home)</key>
 
-			<key id="61501">RunScript(/home/htpc/volumeup.py)</key>
-			<key id="61485">RunScript(/home/htpc/volumedown.py)</key>
+			<key id="61501">RunScript(/home/htpc/HTPCGit/scripts/volumeup.py)</key>
+			<key id="61485">RunScript(/home/htpc/HTPCGit/scripts/volumedown.py)</key>
 		</keyboard>
 	</pvrsettings>
 
@@ -225,8 +225,8 @@
 			<key id="61527">subtitledelayplus</key>
 			<key id="61512">activatewindow(Home)</key>
 
-			<key id="61501">RunScript(/home/htpc/volumeup.py)</key>
-			<key id="61485">RunScript(/home/htpc/volumedown.py)</key>
+			<key id="61501">RunScript(/home/htpc/HTPCGit/scripts/volumeup.py)</key>
+			<key id="61485">RunScript(/home/htpc/HTPCGit/scripts/volumedown.py)</key>
 		</keyboard>
 	</playersettings>
 
@@ -237,8 +237,8 @@
 			<key id="61527">subtitledelayplus</key>
 			<key id="61512">activatewindow(Home)</key>
 
-			<key id="61501">RunScript(/home/htpc/volumeup.py)</key>
-			<key id="61485">RunScript(/home/htpc/volumedown.py)</key>
+			<key id="61501">RunScript(/home/htpc/HTPCGit/scripts/volumeup.py)</key>
+			<key id="61485">RunScript(/home/htpc/HTPCGit/scripts/volumedown.py)</key>
 		</keyboard>
 	</mediasettings>
 
@@ -249,8 +249,8 @@
 			<key id="61527">subtitledelayplus</key>
 			<key id="61512">activatewindow(Home)</key>
 
-			<key id="61501">RunScript(/home/htpc/volumeup.py)</key>
-			<key id="61485">RunScript(/home/htpc/volumedown.py)</key>
+			<key id="61501">RunScript(/home/htpc/HTPCGit/scripts/volumeup.py)</key>
+			<key id="61485">RunScript(/home/htpc/HTPCGit/scripts/volumedown.py)</key>
 		</keyboard>
 	</interfacesettings>
 
@@ -262,8 +262,8 @@
 			<key id="61527">subtitledelayplus</key>
 			<key id="61512">activatewindow(Home)</key>
 
-			<key id="61501">RunScript(/home/htpc/volumeup.py)</key>
-			<key id="61485">RunScript(/home/htpc/volumedown.py)</key>
+			<key id="61501">RunScript(/home/htpc/HTPCGit/scripts/volumeup.py)</key>
+			<key id="61485">RunScript(/home/htpc/HTPCGit/scripts/volumedown.py)</key>
 		</keyboard>
 	</addonbrowser>
 
@@ -274,8 +274,8 @@
 			<key id="61527">subtitledelayplus</key>
 			<key id="61512">activatewindow(Home)</key>
 
-			<key id="61501">RunScript(/home/htpc/volumeup.py)</key>
-			<key id="61485">RunScript(/home/htpc/volumedown.py)</key>
+			<key id="61501">RunScript(/home/htpc/HTPCGit/scripts/volumeup.py)</key>
+			<key id="61485">RunScript(/home/htpc/HTPCGit/scripts/volumedown.py)</key>
 		</keyboard>
 	</addonsettings>
 
@@ -286,8 +286,8 @@
 			<key id="61527">subtitledelayplus</key>
 			<key id="61512">activatewindow(Home)</key>
 
-			<key id="61501">RunScript(/home/htpc/volumeup.py)</key>
-			<key id="61485">RunScript(/home/htpc/volumedown.py)</key>
+			<key id="61501">RunScript(/home/htpc/HTPCGit/scripts/volumeup.py)</key>
+			<key id="61485">RunScript(/home/htpc/HTPCGit/scripts/volumedown.py)</key>
 		</keyboard>
 	</addoninformation>
 

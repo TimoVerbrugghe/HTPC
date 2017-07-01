@@ -16,10 +16,10 @@ printf "Starting HTPC Git Auto Update. Time & Date right now is $(date)\n" >> $G
 # It updates all git repositories on the system and then does any post-processing needed to update applications
 
 # Reset any changes done in the HTPCGit repository (updating is only done one-way or by manually committing!)
-su fileserver -c "git -C /home/htpc/HTPCGit/ reset --hard" >> $GIT_LOG 2>&1
+su htpc -c "git -C /home/htpc/HTPCGit/ reset --hard" >> $GIT_LOG 2>&1
 
 # Updating Git repositories
-su fileserver -c "git -C /home/htpc/HTPCGit/ pull" >> $GIT_LOG 2>&1
+su htpc -c "git -C /home/htpc/HTPCGit/ pull" >> $GIT_LOG 2>&1
 
 ## Post Processing
 # Set right permission for scripts, since they lose execution permission after doing git update
