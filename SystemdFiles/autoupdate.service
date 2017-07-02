@@ -1,7 +1,0 @@
-[Unit]
-Description = Arch Auto Update Service
-OnFailure=unit-failure-notification@%n
-
-[Service]
-Type=oneshot
-ExecStart=/home/htpc/HTPCGit/scripts/autoupdate.sh
