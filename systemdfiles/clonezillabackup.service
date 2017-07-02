@@ -1,0 +1,7 @@
+[Unit]
+Description = CloneZilla Backup Script
+OnFailure=unit-failure-notification@%n
+
+[Service]
+Type=oneshot
+ExecStart=/home/htpc/.kodi/addons/script.clonezillabackup/bin/clonezillabackup.sh
