@@ -42,6 +42,7 @@ nano /etc/ssh/sshd_config
 
 ## Booting
 	# Num Lock activation
+		# Move getty@_override.conf to /etc/systemd/system/getty@.service.d/override.conf
 
 ## Multimedia
 	# Sound - Setting default device
@@ -168,9 +169,8 @@ nano ~/.bash_profile
 	# Install clonezillabackup addon in kodi
 
 ## Change boot image
-	# Put boot image in /root/kodi_splash.png
 	nano /etc/default/grub
-		GRUB_BACKGROUND=/home/htpc/kodi_splash.png
+		GRUB_BACKGROUND=/home/htpc/HTPCGit/pictures/kodi_splash.png
 
 	grub-mkconfig -o /boot/grub/grub.cfg
 
