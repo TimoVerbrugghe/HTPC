@@ -31,4 +31,4 @@ systemctl daemon-reload >> $GIT_LOG 2>&1
 # Restart services for which config files are linked to samba
 systemctl restart smbd nmbd >> $GIT_LOG 2>&1
 
-printf "HTPC Git update finished.\n\n" >> $UPDATE_LOG 2>&1
+printf "HTPC Git update finished.\n\n" >> $GIT_LOG 2>&1
