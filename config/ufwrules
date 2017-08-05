@@ -14,3 +14,8 @@ To                         Action      From
 # Kodi Event & Web Server
 80/tcp                     ALLOW       192.168.0.0/24
 9777/udp                   ALLOW       192.168.0.0/24
+
+# NFS
+111                        ALLOW       192.168.0.0/24
+2049                       ALLOW       192.168.0.0/24
+20048                      ALLOW       192.168.0.0/24
