@@ -2,6 +2,6 @@
     <cache>
         <buffermode>1</buffermode>
         <memorysize>314572800</memorysize>
-        <readfactor>1.8</readfactor>
+        <readfactor>20</readfactor>
     </cache>
 </advancedsettings>
