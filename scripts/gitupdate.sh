@@ -24,6 +24,8 @@ su htpc -c "git -C /home/htpc/HTPCGit/ pull" >> $GIT_LOG 2>&1
 ## Post Processing
 # Set right permission for scripts, since they lose execution permission after doing git update
 chmod -R +x /home/htpc/HTPCGit/scripts/ >> $GIT_LOG 2>&1
+chmod -R +x /home/htpc/HTPCGit/addons/script.chromeyoutubetv/bin/chromeyoutubetv.sh >> $GIT_LOG 2>&1
+chmod -R +x /home/htpc/HTPCGit/addons/script.chrome/bin/chrome.sh >> $GIT_LOG 2>&1
 
 # Systemd reload after potential update from systemd files
 systemctl daemon-reload >> $GIT_LOG 2>&1
