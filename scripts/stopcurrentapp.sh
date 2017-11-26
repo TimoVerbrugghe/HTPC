@@ -24,9 +24,9 @@ else
 	killall -CONT kodi.bin
 
 	printf "Return focus to kodi after stopping Chrome" > $logfile 2>&1
-	DISPLAY=:0 wmctrl -r kodi -b remove,hidden
-	DISPLAY=:0 wmctrl -r kodi -b add,fullscreen
-	DISPLAY=:0 wmctrl -a kodi
+	su htpc -c "DISPLAY=:0 wmctrl -r kodi -b remove,hidden"
+	su htpc -c "DISPLAY=:0 wmctrl -r kodi -b add,fullscreen"
+	su htpc -c "DISPLAY=:0 wmctrl -a kodi"
 fi
 
 exit 0
