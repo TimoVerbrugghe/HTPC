@@ -20,13 +20,13 @@ else
 	printf "Wait half a second before returning to Kodi" > $logfile 2>&1
 	sleep 0.5
 
-	printf "Resume kodi" > $logfile 2>&1
-	killall -CONT kodi.bin
+	# printf "Resume kodi" > $logfile 2>&1
+	# killall -CONT kodi.bin > $logfile 2>&1
 
 	printf "Return focus to kodi after stopping Chrome" > $logfile 2>&1
-	su htpc -c "DISPLAY=:0 wmctrl -r kodi -b remove,hidden"
-	su htpc -c "DISPLAY=:0 wmctrl -r kodi -b add,fullscreen"
-	su htpc -c "DISPLAY=:0 wmctrl -a kodi"
+	DISPLAY=:0 wmctrl -r kodi -b remove,hidden > $logfile 2>&1
+	DISPLAY=:0 wmctrl -r kodi -b add,fullscreen > $logfile 2>&1
+	DISPLAY=:0 wmctrl -a kodi > $logfile 2>&1
 fi
 
 exit 0

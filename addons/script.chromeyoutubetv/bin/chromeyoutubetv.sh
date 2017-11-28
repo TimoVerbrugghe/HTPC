@@ -15,8 +15,8 @@ killall chromium || true > $logfile 2>&1
 printf "Put Kodi window in the background" > $logfile 2>&1
 DISPLAY=:0 wmctrl -r kodi -b add,hidden
 
-printf "Freeze/stop kodi from running" > $logfile 2>&1
-killall -STOP kodi.bin
+# printf "Freeze/stop kodi from running" > $logfile 2>&1
+# killall -STOP kodi.bin
 
 printf "Wait half a second before opening Google Chrome" > $logfile 2>&1
 sleep 0.5
