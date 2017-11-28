@@ -179,7 +179,19 @@ nano ~/.bash_profile
 	cp -R /etc/xdg/openbox/ ~/.config/
 
 	nano ~/.config/openbox/rc.xml
-		# Under <!-- Keybindings for windows -->, change ALT-F4 options
+		# Under <!-- Keybindings for windows -->, Add ALT-F5 option & change the scope of the ALT-F4 option
 		<keybind key="A-F4">
-		 <command>/home/htpc/HTPCGit/scripts/stopcurrentapp.sh</command>
+			<action name="If">
+			  <title>Kodi</title>
+			  <then><!-- Do nothing for Kodi --></then>
+			  <else>
+			   <action name="Close" />
+			  </else>
+			 </action>
+		</keybind>
+
+		<keybind key="A-F5">
+			<action name="Execute">
+				<command>/home/htpc/HTPCGit/scripts/stopcurrentapp.sh</command>
+			</action>
 		</keybind>
