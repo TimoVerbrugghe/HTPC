@@ -20,6 +20,7 @@ su htpc -c "git -C /home/htpc/HTPCGit/ reset --hard" >> $GIT_LOG 2>&1
 
 # Updating Git repositories
 su htpc -c "git -C /home/htpc/HTPCGit/ pull" >> $GIT_LOG 2>&1
+su htpc -c "git -C /home/htpc/RetrospectGit/ pull" >> $GIT_LOG 2>&1
 
 ## Post Processing
 # Set right permission for scripts, since they lose execution permission after doing git update
