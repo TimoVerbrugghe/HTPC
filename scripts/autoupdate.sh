@@ -3,6 +3,14 @@
 # Arch Auto update script. Runs pacman update without input needed from admin/user and puts everything in a logfile. 
 # Will notify user if update has gone wrong.
 
+################
+# Requirements #
+################
+
+# Pacman has to be able to run without a sudo password, which can be set up by modifying sudoers file
+	# EDITOR=nano visudo
+	# fileserver ALL=(ALL) NOPASSWD: /usr/bin/pacman
+
 #############
 # Variables #
 #############
@@ -15,7 +23,8 @@ UPDATE_LOG="/home/htpc/logs/autoupdate.log"
 #####################
 
 printf "Starting Arch Auto Update. Time & Date right now is $(date)\n" >> $UPDATE_LOG 2>&1
-pacman -Syuq --noconfirm >> $UPDATE_LOG 2>&1
+su htpc -c "pacaur -Syu --noedit --noconfirm" >> $UPDATE_LOG 2>&1
+systemctl daemon-reload
 
 # Getting return code from pacman. If this return code is not 0 (so an error has occured with the pacman update), notify system administrator
 errorval="$?"
