@@ -159,6 +159,11 @@ nano ~/.bash_profile
 	# Enable systemd samba services
 	systemctl enable smbd.service nmbd.service
 
+	## Enable network discovery of Samba servers for Windows 10
+	# Go to "Turn Windows Features On or Off"
+	# Enable SMB/CIFS 1.0 features
+	# Restart PC
+
 ## Clonezilla backup timer
 	# Move clonezillabackup.timer & clonezillabackup.service to /etc/systemd/system/
 	systemctl enable clonezillabackup.timer
