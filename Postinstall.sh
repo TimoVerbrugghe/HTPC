@@ -211,3 +211,5 @@ nano ~/.bash_profile
 			GRUB_CMDLINE_LINUX_DEFAULT="usbcore.autosuspend=-1"
 
 	# Enable sleep detection in the flirc app (advanced settings)
+	# Enable Suspend settings in Kodi: Settings -> System -> Power Saving -> Shutdown Function = Suspend
+	# Set timer for suspend in Kodi: Settings -> System -> Power Saving -> Shutdown Function Timer
