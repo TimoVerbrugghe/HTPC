@@ -6,6 +6,10 @@ script_file = 'chromeyoutubetv.sh'
 script = os.path.join(script_path, 'bin', script_file)
 
 xbmc.executebuiltin("XBMC.PlayerControl(Stop)")
+xbmc.executebuiltin("XBMC.InhibitIdleShutdown(true)")
+
 print(script)
 os.chmod(script, stat.S_IRWXU)
 os.system(script)
+
+xbmc.executebuiltin("XBMC.InhibitIdleShutdown(false)")
