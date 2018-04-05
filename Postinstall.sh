@@ -200,3 +200,14 @@ nano ~/.bash_profile
 				<command>/home/htpc/HTPCGit/scripts/stopcurrentapp.sh</command>
 			</action>
 		</keybind>
+
+## Enable suspend & wake
+	# Create udev rule for Flirc so it is able to wake from suspend (idVender = 20a0 & idProduct = 0001)
+		nano /etc/udev/rules.d/90-keyboardwakeup.rules
+			SUBSYSTEM=="usb", ATTRS{idVendor}=="20a0", ATTRS{idProduct}=="0001" RUN+="/bin/sh -c 'echo enabled > /sys$env{DEVPATH}/../power/wakeup'"
+
+	# Make sure usb devices are not suspended
+		nano /etc/default/grub
+			GRUB_CMDLINE_LINUX_DEFAULT="usbcore.autosuspend=-1"
+
+	# Enable sleep detection in the flirc app (advanced settings)
