@@ -5,6 +5,7 @@ Description=Run reflector weekly
 OnCalendar=weekly
 RandomizedDelaySec=12h
 Persistent=true
+WakeSystem=true
 
 [Install]
 WantedBy=timers.target

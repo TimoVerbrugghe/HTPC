@@ -9,6 +9,8 @@ Description = Will run clonezillabackup.service on the first wednesday of every 
 
 OnCalendar= Wed *-*-1..7 4:30:00
 Unit=clonezillabackup.service
+WakeSystem=true
+Persistent=false
 
 [Install]
 WantedBy=multi-user.target

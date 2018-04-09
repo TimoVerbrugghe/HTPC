@@ -9,6 +9,8 @@ Description = Will run gitupdate.service every week on Tuesday, at 5 am
 
 OnCalendar=Tue *-*-* 05:00:00
 Unit=gitupdate.service
+WakeSystem=true
+Persistent=false
 
 [Install]
 WantedBy=multi-user.target
