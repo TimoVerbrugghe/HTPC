@@ -1,0 +1,7 @@
+[Unit]
+Description = Clean Library Service
+OnFailure=unit-failure-notification@%n
+
+[Service]
+Type=oneshot
+ExecStart=/home/htpc/HTPCGit/scripts/cleanlibrary.sh

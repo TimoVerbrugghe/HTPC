@@ -1,0 +1,16 @@
+[Unit]
+Description = Will run cleanlibrary.service every sunday, at 3:00 am
+
+[Timer]
+# OnCalendar Syntax: days year-month-day hour:minutes:seconds
+# 1..5 represents a range
+# * is wildcard
+# days works as an if statemtent (only run if day is equal to one of the options in days) (Optional)
+
+OnCalendar=Sun *-*-* 3:00:00
+Unit=cleanlibrary.service
+WakeSystem=true
+Persistent=false
+
+[Install]
+WantedBy=multi-user.target
