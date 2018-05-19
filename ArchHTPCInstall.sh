@@ -48,13 +48,8 @@ ip addr
 	Address=('192.168.0.5/24')
 	Gateway=('192.168.0.1')
 
-	## IPv6 Configuration
-	IP6=static
-	Address6=('2a02:1810:4f2b:7900::0005/64')
-	Gateway6='fe80::1'
-
 	## General Configuration
-	DNS=('8.8.8.8' '8.8.4.4' '2001:4860:4860::8888' '2001:4860:4860::8844')
+	DNS=('8.8.8.8' '8.8.4.4')
 	TimeoutUp=300
 	TimeoutCarrier=300)
 
