@@ -33,6 +33,6 @@ chmod -R +x /home/htpc/HTPCGit/addons/script.parsec/bin/parsec.sh >> $GIT_LOG 2>
 systemctl daemon-reload >> $GIT_LOG 2>&1
 
 # Restart services for which config files are linked to samba
-systemctl restart smbd nmbd >> $GIT_LOG 2>&1
+systemctl restart smb nmb >> $GIT_LOG 2>&1
 
 printf "HTPC Git update finished.\n\n" >> $GIT_LOG 2>&1
