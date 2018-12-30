@@ -23,7 +23,7 @@ UPDATE_LOG="/home/htpc/logs/autoupdate.log"
 #####################
 
 printf "Starting Arch Auto Update. Time & Date right now is $(date)\n" >> $UPDATE_LOG 2>&1
-su htpc -c "pacaur -Syu --noedit --noconfirm" >> $UPDATE_LOG 2>&1
+su htpc -c "yay -Syu --noansweredit --noanswerclean --noansweredit --noanswerupgrade --noconfirm" >> $UPDATE_LOG 2>&1
 systemctl daemon-reload
 
 # Getting return code from pacman. If this return code is not 0 (so an error has occured with the pacman update), notify system administrator
